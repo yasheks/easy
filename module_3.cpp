@@ -39,9 +39,9 @@ int itc_spr(int a, int b){
         return Skv;
 }
 int itc_str(int a, int b, int c) {
-  if (a + b > c && a + c > b && b + c > a) {
-    int p = (a + b + c) / 2;
-    int s = sqrt(p * (p - a) * (p - b) * (p - c));
+  if (a>0 && b>0 && c>0 && a + b > c && a + c > b && b + c > a) {
+    float p = (a + b + c) / 2;
+    float s = itc_sqrt(p * (p - a) * (p - b) * (p - c));
     return s;
   } else {
     return -1;
