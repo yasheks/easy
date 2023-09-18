@@ -7,11 +7,20 @@ double itc_pow(int num, int step){
             num = num * num2;
         }
     }
+    else if (step = 0)
+    {
+           return 1;
+    }
     else
     {
-           for (int i = 1; i>step; i--){
-            num = num / num2;
-        }
+        step = -step
+       for (int i = 1; i<step; i++){
+            num = num * num2;
+        } 
+        return 1/num
+    }
+    
+    
     }
     return num;
     
