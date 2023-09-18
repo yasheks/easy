@@ -38,12 +38,15 @@ int itc_spr(int a, int b){
     else
         return Skv;
 }
-int itc_str(float a, int b, int c) {
-  if (a>0 && b>0 && c>0 && a + b > c && a + c > b && b + c > a) {
-    float p = (a + b + c) / 2;
-    float s = itc_sqrt(p * (p - a) * (p - b) * (p - c));
-    return s;
-  } else {
+int itc_str(int a, int b, int c) {
+  if (a>0 && b>0 && c>0 && a + b > c && a + c > b && b + c > a)
+    {
+        float float_a = a;f
+        float p = (float_a + b + c) / 2;
+        float s = itc_sqrt(p * (p - float_a) * (p - b) * (p - c));
+        return s;
+    }
+   else {
     return -1;
   }
 }
