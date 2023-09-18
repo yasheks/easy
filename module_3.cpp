@@ -41,7 +41,7 @@ int itc_spr(int a, int b){
 int itc_str(int a, int b, int c) {
   if (a>0 && b>0 && c>0 && a + b > c && a + c > b && b + c > a)
     {
-        float float_a = a;f
+        float float_a = a;
         float p = (float_a + b + c) / 2;
         float s = itc_sqrt(p * (p - float_a) * (p - b) * (p - c));
         return s;
