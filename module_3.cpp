@@ -3,11 +3,11 @@ int itc_sqrt(int num) {
         return -1;
     }
 
-    int left = 0;
-    int right = num;
+    long long left = 0;
+    long long right = num;
 
     while (left <= right) {
-        int mid = (left + right) / 2;
+        long long mid = (left + right) / 2;
 
         if (mid * mid == num) {
             return mid;
@@ -38,7 +38,7 @@ int itc_spr(int a, int b){
     else
         return Skv;
 }
-int itc_str(int a, int b, int c) {
+int itc_str(float a, int b, int c) {
   if (a>0 && b>0 && c>0 && a + b > c && a + c > b && b + c > a) {
     float p = (a + b + c) / 2;
     float s = itc_sqrt(p * (p - a) * (p - b) * (p - c));
