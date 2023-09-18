@@ -133,7 +133,7 @@ double itc_pow(int num, int step){
         }
         return num;
     }
-    else if (step = 0)
+    else if (step == 0)
     {
            return 1;
     }
@@ -141,9 +141,12 @@ double itc_pow(int num, int step){
     {
         step = -step;
        for (int i = 1; i<step; i++){
-            num = num * num;
+            num = num * num2;
+
         }
-        return 1.0/num;
+        float flot_num = num;
+        float result = 1/flot_num;
+        return result;
     }
 
 
